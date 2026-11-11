@@ -2,10 +2,11 @@
 import re
 
 PAGE = re.compile(r"(?m)^\*page(\d+)\|[^\r\n]*")
+PREVIEW_PAGE_COUNT = 73
 INLINE = re.compile(r"\[([^\]]+)\]")
 
 
-def opening_preview(source, count=15, *, mature=True, text_version="classic"):
+def opening_preview(source, count=PREVIEW_PAGE_COUNT, *, mature=True, text_version="classic"):
     if text_version not in ("classic", "realta"):
         raise ValueError("Unsupported text version")
     matches = list(PAGE.finditer(source))
@@ -56,8 +57,10 @@ def opening_preview(source, count=15, *, mature=True, text_version="classic"):
                 continue
             def inline(match):
                 tag = match.group(1).strip().lower()
-                if tag == "lr":
+                if tag in ("lr", "l"):
                     return "\n"
+                if tag in ("indent", "endindent"):
+                    return ""
                 if re.fullmatch(r"line\d+", tag):
                     return "—"
                 raise ValueError(f"Unsupported inline tag on page {number}: {tag}")
@@ -69,3 +72,34 @@ def opening_preview(source, count=15, *, mature=True, text_version="classic"):
             raise ValueError(f"Opening page {number} is empty")
         pages.append(text)
     return pages
+
+
+def opening_voice_cues(source, pages):
+    """Map each @say to the position of its following dialogue in the page text."""
+    matches = list(PAGE.finditer(source))
+    result = []
+    for number, text in enumerate(pages):
+        page_matches = [i for i, match in enumerate(matches) if int(match.group(1)) == number]
+        if len(page_matches) != 1:
+            raise ValueError(f"Opening page {number} is missing or ambiguous")
+        index = page_matches[0]
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(source)
+        lines = source[matches[index].end():end].splitlines()
+        cues = []
+        previous = 0
+        for i, raw in enumerate(lines):
+            match = re.match(r"^\s*@say\s+storage=([A-Za-z0-9_]+)(?:\s|$)", raw, re.I)
+            if not match:
+                continue
+            spoken = next((line.strip() for line in lines[i + 1:] if line.strip() and not line.lstrip().startswith(("@", ";", "*"))), "")
+            spoken = re.sub(r"\[line\d+\]", "\u2014", spoken)
+            spoken = re.sub(r"\[(?:lr|l)\].*", "", spoken).strip()
+            if not spoken:
+                raise ValueError(f"Missing dialogue after voice cue on page {number}")
+            offset = text.find(spoken, previous)
+            if offset < 0:
+                raise ValueError(f"Cannot locate voice dialogue on page {number}: {match.group(1)}")
+            cues.append({"offset": offset, "name": match.group(1)})
+            previous = offset + len(spoken)
+        result.append(cues)
+    return result

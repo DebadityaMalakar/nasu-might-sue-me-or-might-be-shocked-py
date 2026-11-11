@@ -34,7 +34,10 @@ init -100 python:
         raise RuntimeError("Startup archive verification failed: {}".format(error))
 
 label splashscreen:
-    call startup_logo
+    if os.environ.get("FATE_PORT_JUMP_PAGE"):
+        call start
+    else:
+        call startup_logo
     return
 
 label startup_logo:
@@ -50,7 +53,7 @@ label startup_logo:
     $ renpy.pause(2.5, hard=False)
     scene expression "generated/rogo_fix.png" with Dissolve(0.8)
     $ renpy.pause(3.0, hard=False)
-    scene white with Dissolve(0.8)
+    scene expression Solid("#fff") with Dissolve(0.8)
     stop sound fadeout 0.2
     return
 
@@ -93,40 +96,97 @@ label main_menu_screen:
     call screen main_menu
     jump main_menu_screen
 
+init python:
+    def opening_page_cues(page):
+        if page == 0:
+            renpy.music.play("generated/opening_bgm43.ogg", channel="music", loop=True)
+        elif page == 8:
+            renpy.music.stop(channel="music", fadeout=3.0)
+        elif page == 10:
+            renpy.music.play("generated/opening_bgm42.ogg", channel="music", loop=True)
+        elif page == 27:
+            renpy.music.stop(channel="music", fadeout=2.0)
+        elif page == 34:
+            renpy.music.play("generated/opening_se019.wav", channel="sound")
+        elif page == 36:
+            renpy.music.play("generated/opening_bgm03.ogg", channel="music", loop=True, fadein=1.0)
+        elif page == 64:
+            renpy.music.play("generated/opening_se247.wav", channel="sound")
+        elif page == 71:
+            renpy.music.stop(channel="music", fadeout=3.0)
+        if page in (5, 8, 10, 11, 12, 15, 16, 19, 25, 27, 34, 35, 36, 49):
+            renpy.transition(Dissolve(0.6))
+
 label start:
     scene black
     $ preview_file = Path(config.gamedir) / "generated" / "opening_preview.json"
     $ preview_pages = json.loads(preview_file.read_text(encoding="utf-8"))
-    call screen opening_preview_screen(preview_pages)
+    $ cue_file = Path(config.gamedir) / "generated" / "opening_voice_cues.json"
+    $ preview_voice_cues = json.loads(cue_file.read_text(encoding="utf-8"))
+    $ jump_value = os.environ.pop("FATE_PORT_JUMP_PAGE", "1")
+    $ jump_index = int(jump_value) - 1 if jump_value.isdecimal() else 0
+    $ jump_index = jump_index if 0 <= jump_index < len(preview_pages) else 0
+    if jump_index <= 7:
+        $ opening_page_cues(0)
+    elif 10 <= jump_index <= 26:
+        $ opening_page_cues(10)
+    elif 36 <= jump_index <= 70:
+        $ opening_page_cues(36)
+    call screen opening_preview_screen(preview_pages, preview_voice_cues, jump_index)
+    stop music fadeout 1.0
+    stop voice
     return
 
-screen opening_preview_screen(pages):
+init python:
+    def opening_play_voice(cues, page, position):
+        for cue in cues[page]:
+            if cue["offset"] == position:
+                renpy.music.play("generated/voice_" + cue["name"] + ".wav", channel="voice", loop=False)
+
+screen opening_preview_screen(pages, voice_cues, start_index=0):
     modal True
-    default page_index = 0
+    default page_index = start_index
     default visible_chars = 0
-    if page_index <= 7:
+    on "show" action Function(opening_play_voice, voice_cues, page_index, 0)
+    if page_index <= 4:
         add Transform("generated/opening_fire.webp", xysize=(800, 600))
-    elif page_index == 10:
+    elif page_index <= 7:
+        add Transform("generated/opening_aftermath.webp", xysize=(800, 600))
+    elif page_index == 10 or 25 <= page_index <= 35:
         add Solid("#000")
     elif page_index <= 11:
         add Solid("#fff")
+    elif page_index == 15:
+        add Transform("generated/opening_sky.webp", xysize=(800, 600))
+    elif 36 <= page_index <= 48:
+        add Transform("generated/opening_shed.webp", xysize=(800, 600))
+    elif page_index >= 49:
+        add Transform("generated/opening_shed_inner.webp", xysize=(800, 600))
     else:
         add Transform("generated/opening_hospital.webp", xysize=(800, 600))
+    if page_index == 49:
+        add Transform("generated/opening_sakura_13a.webp", xysize=(260, 545)) xalign 0.5 yalign 1.0
+    elif page_index == 50:
+        add Transform("generated/opening_sakura_13b.webp", xysize=(260, 545)) xalign 0.5 yalign 1.0
+    elif page_index == 51:
+        add Transform("generated/opening_sakura_06a.webp", xysize=(260, 545)) xalign 0.5 yalign 1.0
+    elif page_index == 52:
+        add Transform("generated/opening_sakura_09a.webp", xysize=(260, 545)) xalign 0.5 yalign 1.0
     add Solid("#0009")
     text "SABER / OPENING - TEXT PREVIEW" xpos 48 ypos 32 size 17 color "#91a9c5"
-    text "Opening preview - effects and audio not yet ported" xpos 48 ypos 58 size 14 color "#9299a2"
+    text "Opening preview - effects and voice timing still in progress" xpos 48 ypos 58 size 14 color "#9299a2"
     text pages[page_index][:visible_chars]:
         xpos 60 ypos 132 xmaximum 680 size 24 color "#f3f2ee" line_spacing 7 substitute False
     text "[page_index + 1] / [len(pages)]" xpos 60 ypos 540 size 15 color "#9299a2"
     if visible_chars < len(pages[page_index]):
-        timer 0.03 repeat True action SetScreenVariable("visible_chars", min(visible_chars + 1, len(pages[page_index])))
+        timer 0.03 repeat True action [Function(opening_play_voice, voice_cues, page_index, visible_chars + 1), SetScreenVariable("visible_chars", min(visible_chars + 1, len(pages[page_index])))]
         textbutton "Show text":
-            xalign 0.9 yalign 0.92 action SetScreenVariable("visible_chars", len(pages[page_index]))
-        key "dismiss" action SetScreenVariable("visible_chars", len(pages[page_index]))
+            xalign 0.9 yalign 0.92 action [Function(renpy.music.stop, channel="voice"), SetScreenVariable("visible_chars", len(pages[page_index]))]
+        key "dismiss" action [Function(renpy.music.stop, channel="voice"), SetScreenVariable("visible_chars", len(pages[page_index]))]
     elif page_index < len(pages) - 1:
         textbutton "Next":
-            xalign 0.9 yalign 0.92 action [SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
-        key "dismiss" action [SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
+            xalign 0.9 yalign 0.92 action [Function(renpy.music.stop, channel="voice"), Function(opening_page_cues, page_index + 1), Function(opening_play_voice, voice_cues, page_index + 1, 0), SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
+        key "dismiss" action [Function(renpy.music.stop, channel="voice"), Function(opening_page_cues, page_index + 1), Function(opening_play_voice, voice_cues, page_index + 1, 0), SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
     else:
         textbutton "Return to title":
             xalign 0.9 yalign 0.92 action Return()

@@ -39,3 +39,22 @@ def test_unknown_condition_is_not_silently_ignored():
 
 def test_line_tag_emits_an_em_dash():
     assert opening_preview(source("[line5]Text"), count=5) == ["\u2014Text"] * 5
+
+
+def test_indentation_tags_are_removed_without_losing_text():
+    assert opening_preview(source("[indent]Text[endindent]"), count=5) == ["Text"] * 5
+
+
+def test_voice_cues_follow_text_positions():
+    from episode_1 import opening_voice_cues
+    script = "\n".join(f"*page{i}|\n@say storage=voice_a\nFirst[lr]\n@say storage=voice_b\nSecond\n@pg" for i in range(5))
+    pages = opening_preview(script, count=5)
+    cues = opening_voice_cues(script, pages)
+    assert cues[0] == [{"offset": 0, "name": "voice_a"}, {"offset": 6, "name": "voice_b"}]
+
+
+def test_voice_mapping_rejects_unmatched_dialogue():
+    from episode_1 import opening_voice_cues
+    script = "*page0|\n@say storage=voice_a\nDialogue\n@pg"
+    with pytest.raises(ValueError, match="Cannot locate voice dialogue"):
+        opening_voice_cues(script, ["Different text"])

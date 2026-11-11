@@ -1,62 +1,46 @@
-# Fate Ren'Py port
+﻿# Fate Ren'Py community port
 
-This is an early community Ren'Py port that relies on the original game files. It is not guaranteed to work exactly like the original game. The setup screen and startup/title prototype are implemented; the story and original save import are not yet available.
+An early community port that runs using original Fate/stay night Realta Nua files supplied by the user. It is not guaranteed to behave exactly like the original game. The current build includes a title screen and a 73-page English opening preview; the full story, branching, original save import, and Japanese support are not implemented.
 
-## Run setup
+## Requirements
 
-Use Python 3.10 or newer with Tkinter installed:
+- Windows, Python 3.10 or newer with Tkinter, and a separately installed Ren'Py 8.5.3 SDK.
+- A supported local base-game installation with `etc.xp3`, `bgimage.xp3`, `bgm.xp3`, and `sound.xp3`.
+- A patch directory with `patch_hd_1600.xp3` and `patch_lang_english.xp3`. The current implementation accepts only the archive hashes recorded in `src/startup.py`; other editions or variants will be rejected until explicitly supported.
+- For character voices, the base game's `voice.xp3` and the separate `tcwfutil.exe` converter at `.cache/tcwfutil/bin/build/tcwfutil.exe` in the project folder. Without the converter, the preview runs without character voices. When present, the launcher verifies the supported voice archive and converts the required `.tcw` entries to local WAV files.
+- For development and tests, install `requirements-dev.txt` with `python -m pip install -r requirements-dev.txt`. The game uses Ren'Py's bundled Python; the parser and test tools use the separately installed Python.
 
-```sh
-python src/setup.py
-```
+The converter is a separate GPL-2.0 program, not part of this project's MIT-licensed code: [tcwfutil](https://github.com/uyjulian/tcwfutil). Obtain the Windows AMD64 build from its release page and place the extracted executable at the path above. The local `.cache/` directory and converted game content are ignored by Git; neither the converter nor game assets are bundled with the port.
 
-Choose one game or all three, select each required game directory and the patch directory, and optionally select an existing save directory. The game labels are placeholders until the actual installation layout is verified. Settings are stored in `FateRenpyPort/setup.json` under `%LOCALAPPDATA%` on Windows (or `~/.config` elsewhere). The screen currently checks only that directories exist; it does not verify XP3 files, import saves, or launch gameplay. Existing saves are never modified.
-
-Run the synthetic tests with `python -m pytest test` after installing pytest.
-
-## Original game files
-
-The finished port is intended to require the appropriate original XP3 archives at runtime and validate them before gameplay, even when a local cache exists. Required archives, supported versions, and hashes remain to be established. A file check establishes file identity, not ownership.
-
-Game archives, extracted assets, scenes, dialogue, images, audio, and locally generated game content must not be committed or distributed with the port. `.ref/` holds local reference material and is ignored by Git. The implementation must generate or access game content locally from verified original archives.
-
-## Project layout
-
-- `src/` — setup and future port code.
-- `test/` — automated tests using synthetic fixtures.
-- `.ref/` — local, untracked extracted reference assets.
-- `PLAN.PORT.MD` and `REPORT.MD` — local planning and investigation notes, ignored by Git.
-
-
-## Startup animation prototype
-
-Install a Ren'Py SDK separately, run `python src/setup.py`, then launch the prototype through:
+## Setup and launch
 
 ```powershell
+python src/setup.py
 python src/startup.py --renpy "C:\path\to\renpy-sdk\renpy.exe"
 ```
 
-The launcher verifies SHA-256 hashes for the supported `etc.xp3` and `bgimage.xp3` in the selected game directory on every launch, then extracts only the needed logo assets to the ignored local `src/renpy/game/generated/` cache. The prototype also requires and verifies the observed 1600-pixel HD patch archive in the configured patch directory. Only the observed archive versions are supported. The prototype also verifies the archives when the Ren'Py project starts directly. The launcher prepares assets before starting Ren'Py. The animation is an approximation: the original spline and mask effects have not been recreated. The logo plays once before the title screen. Start opens a 15-page English opening preview; Load is a placeholder and Config controls sound volume. Game content and original save import are not implemented.
+Setup records local game and patch paths and an optional save directory. Game labels are placeholders until the original installation layouts are fully mapped. Setup checks directory existence; the launcher verifies archive hashes before generating local content. Checking file identity does not establish ownership. Original save files are not modified or imported.
 
+The launcher and Ren'Py startup verify the required archives, then generate assets under the ignored `src/renpy/game/generated/` directory. Verification and conversion can take time on large archives. Starting directly from the Ren'Py SDK also performs verification. Only the observed 1600-wide HD patch is currently supported; 1920-wide support is planned.
 
+## Preview and limitations
 
-## Resolution scope
+The opening uses classic English text with H-enabled condition values. It includes original background music, selected sound effects, and character voice cues when the external converter is available. Voice cues are associated with text positions; skipping text stops the current voice. Timing and visual effects are approximate, music loop points are not yet reproduced, and not all original behavior has been compared against the game. Scenes 01-05 remain unported.
 
-The planned port targets only the 1600-wide and 1920-wide (1080p) HD asset variants. The current title prototype supports the verified 1600-wide patch only; 1920-wide support remains to be implemented.
+Run tests with `python -m pytest test`. The scripts in `src/` include the archive reader, setup, episode parser, and route-choice rules. Tests use synthetic fixtures. `.ref/` and the investigation notes are local references excluded from Git.
 
-## Scenario conversion status
+## Development jump tool
 
-The source parser in `src/kag_parser.py` reads plain UTF-8 and UTF-16 KAG scripts into strict Pydantic records while retaining source lines. It does not yet implement scene conversion, KiriKiri wrapped scripts, flowchart interpretation, or gameplay. Install the tooling dependencies with `python -m pip install -r requirements-dev.txt` and run `python -m pytest test` to check the synthetic tests. Scenes 01–05 are not yet playable.
+The standalone Tkinter tool is outside the Ren'Py game directory and is not packaged with the game:
 
-## Route-specific choices
+```powershell
+python tools/jump_tool.py
+# Or, using the normal launcher:
+python src/startup.py --renpy "C:\path\to\renpy-sdk\renpy.exe" --cheat tools
+```
 
-The route selection rules in `src/route_selection.py` treat a choice with no route requirement as common. A route-specific choice is available only when one of its required games is loaded; unselected route options should remain visible but disabled. Selecting all three in setup does not itself verify or load all three games. The mapping from original choices to game identifiers and integration with the reusable Ren'Py story-choice screen are not implemented yet, so these rules do not alter gameplay today.
-
-
-The opening preview requires the verified `patch_lang_english.xp3` in the configured patch directory. It generates 15 pages locally and does not yet reproduce the original effects, voices, music, branching, or Japanese text. It is not a full scene or route port.
-
-The opening preview uses the classic English text and H-enabled condition values. Scene 00 is not complete, and scenes 01?05 are not yet playable.
+It currently jumps only within Day 1 opening scene 00, pages 1-73. It starts a fresh session and restores only the preview's background and music; it does not reconstruct skipped choices, flags, or saves. Archive checks still apply.
 
 ## License
 
-The port's original code is licensed under the [MIT License](LICENSE). The original game and its assets are separately owned and are not covered by this license.
+The port's original code is licensed under the [MIT License](LICENSE). The original game and its assets are separately owned and are not covered by this license. The optional `tcwfutil` converter has its own GPL-2.0 license.
