@@ -35,3 +35,7 @@ def test_mature_condition_selects_only_the_matching_branch():
 def test_unknown_condition_is_not_silently_ignored():
     with pytest.raises(ValueError, match="Unsupported condition"):
         opening_preview(source("@if exp=\"unrecognized\"\nText\n@endif"), count=5)
+
+
+def test_line_tag_emits_an_em_dash():
+    assert opening_preview(source("[line5]Text"), count=5) == ["\u2014Text"] * 5

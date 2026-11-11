@@ -22,10 +22,10 @@ Game archives, extracted assets, scenes, dialogue, images, audio, and locally ge
 
 ## Project layout
 
-- `src/` â€” setup and future port code.
-- `test/` â€” automated tests using synthetic fixtures.
-- `.ref/` â€” local, untracked extracted reference assets.
-- `PLAN.PORT.MD` and `REPORT.MD` â€” local planning and investigation notes, ignored by Git.
+- `src/` — setup and future port code.
+- `test/` — automated tests using synthetic fixtures.
+- `.ref/` — local, untracked extracted reference assets.
+- `PLAN.PORT.MD` and `REPORT.MD` — local planning and investigation notes, ignored by Git.
 
 
 ## Startup animation prototype
@@ -46,7 +46,7 @@ The planned port targets only the 1600-wide and 1920-wide (1080p) HD asset varia
 
 ## Scenario conversion status
 
-The source parser in `src/kag_parser.py` reads plain UTF-8 and UTF-16 KAG scripts into strict Pydantic records while retaining source lines. It does not yet implement scene conversion, KiriKiri wrapped scripts, flowchart interpretation, or gameplay. Install the tooling dependencies with `python -m pip install -r requirements-dev.txt` and run `python -m pytest test` to check the synthetic tests. Scenes 01â€“05 are not yet playable.
+The source parser in `src/kag_parser.py` reads plain UTF-8 and UTF-16 KAG scripts into strict Pydantic records while retaining source lines. It does not yet implement scene conversion, KiriKiri wrapped scripts, flowchart interpretation, or gameplay. Install the tooling dependencies with `python -m pip install -r requirements-dev.txt` and run `python -m pytest test` to check the synthetic tests. Scenes 01–05 are not yet playable.
 
 ## Route-specific choices
 

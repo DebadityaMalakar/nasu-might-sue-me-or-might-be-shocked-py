@@ -72,7 +72,7 @@ screen main_menu():
         xpos 620 ypos 467 xanchor 0.5
         text_size 22 text_color "#e2f3ff" text_hover_color "#8bc6ff"
         action Show("prototype_config")
-    text "? TYPE-MOON / KADOKAWA SHOTEN PUBLISHING CO., LTD.":
+    text "© TYPE-MOON / KADOKAWA SHOTEN PUBLISHING CO., LTD.":
         xalign 0.5 ypos 560 size 13 color "#b9d9ff" outlines [(1, "#447ab0", 0, 0)]
     textbutton "Quit":
         xalign 0.97 yalign 0.97 text_size 12 text_color "#8293a4" action Quit(confirm=False)
