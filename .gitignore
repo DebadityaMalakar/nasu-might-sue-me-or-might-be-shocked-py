@@ -1,0 +1,29 @@
+﻿# Local game assets, extracts, and generated content
+.ref/
+*.xp3
+.cache/
+generated/
+
+# Local investigation and planning files
+/*.ps1
+/REPORT.MD
+/PLAN.PORT.MD
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# RenPy-generated content and local game assets
+/src/renpy/game/generated/
+/src/renpy/game/saves/
+/src/renpy/game/cache/
+*.rpyc
+
+
+# Local investigation and RenPy diagnostic output
+/STARTUP.NOTES.md
+/src/renpy/log.txt
+/src/renpy/traceback.txt
+/src/renpy/errors.txt
