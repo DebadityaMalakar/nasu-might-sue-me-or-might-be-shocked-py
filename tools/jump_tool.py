@@ -91,7 +91,7 @@ class JumpTool(tk.Tk):
         self.scene_box.configure(values=values)
         self.scene.set(values[0] if values else "")
         if self.day.get() == "Day 2":
-            self.status.set("Day 2 is a text-only preview; route state, voices, and effects are not implemented." if values else f"Day 2 unavailable: {self.day2_error}")
+            self.status.set("Day 2 media is approximate; route state and some effects are not implemented." if values else f"Day 2 unavailable: {self.day2_error}")
         else:
             self.status.set("Day 1 opening preview. The tool starts a new game process.")
         self.update_page_limit()

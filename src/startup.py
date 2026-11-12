@@ -260,7 +260,10 @@ def main():
             raise ValueError("Only Day 1 scene 00 is available")
         prepare(base, PROJECT / "game" / "generated", Path(config["patches"]))
         if args.jump_day == "2":
-            (PROJECT / "game" / "generated" / "saber_days.json").write_text(json.dumps(day_data, ensure_ascii=False), encoding="utf-8")
+            destination = PROJECT / "game" / "generated"
+            (destination / "saber_days.json").write_text(json.dumps(day_data, ensure_ascii=False), encoding="utf-8")
+            from prepare_day2_media import prepare_media
+            prepare_media(base, Path(config["patches"]), destination, args.jump_scene, scene["voice_cues"])
         launch_env = os.environ.copy()
         launch_env.pop("FATE_PORT_JUMP_PAGE", None)
         launch_env.pop("FATE_PORT_JUMP_DAY", None)

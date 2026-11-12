@@ -39,7 +39,7 @@ python tools/jump_tool.py
 python src/startup.py --renpy "C:\path\to\renpy-sdk\renpy.exe" --cheat tools
 ```
 
-Choose Day 1 or Day 2, then a scene and page. The tool reads Day 2 scene counts from the verified English patch and generates the local text cache when launching a Day 2 preview. Day 2 previews have no route state, voices, backgrounds, or effects and are not a playable route. A jump starts a fresh session and does not reconstruct skipped choices, flags, or saves. Archive checks still apply.
+Choose Day 1 or Day 2, then a scene and page. The tool reads Day 2 scene counts from the verified English patch and generates the local text cache when launching a Day 2 preview. Day 2 previews include locally extracted page-level background, sprite, music, sound, and (when the optional converter is available) voice cues. They do not restore branch state or faithfully reproduce in-page effects and inherited visuals, and are not a playable route. A jump starts a fresh session and does not reconstruct skipped choices, flags, or saves. Archive checks still apply.
 
 The developer tool `python tools/prepare_saber_days.py "<patch directory>"` can prepare local text, voice-cue, and flowchart data for the Day 1 and Day 2 source files. This cache is ignored by Git and excluded from Ren'Py distributions. It is preparation data, not a playable route: flowchart conditions, choices, effects, and later scenes still require implementation.
 
