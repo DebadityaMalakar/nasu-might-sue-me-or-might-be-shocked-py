@@ -6,11 +6,25 @@ PREVIEW_PAGE_COUNT = 73
 INLINE = re.compile(r"\[([^\]]+)\]")
 
 
+def render_inline(text, page):
+    def replace(match):
+        tag = match.group(1).strip().lower()
+        if tag in ("lr", "l", "r"):
+            return "\n"
+        if tag in ("indent", "endindent") or tag.startswith("wsay ") or tag == "wsay":
+            return ""
+        if re.fullmatch(r"line\d+", tag):
+            return "\u2014"
+        raise ValueError(f"Unsupported inline tag on page {page}: {tag}")
+    return INLINE.sub(replace, text)
+
+
 def opening_preview(source, count=PREVIEW_PAGE_COUNT, *, mature=True, text_version="classic"):
     if text_version not in ("classic", "realta"):
         raise ValueError("Unsupported text version")
     matches = list(PAGE.finditer(source))
     pages = []
+    conditions = []
     for number in range(count):
         matches_for_page = [i for i, match in enumerate(matches) if int(match.group(1)) == number]
         if len(matches_for_page) != 1:
@@ -22,7 +36,6 @@ def opening_preview(source, count=PREVIEW_PAGE_COUNT, *, mature=True, text_versi
         if re.search(r"(?mi)^\s*@(elsif|jump|call|select)\b", body):
             raise ValueError(f"Opening page {number} contains unsupported control flow")
         lines = []
-        conditions = []
         for line in body.splitlines():
             stripped = line.strip()
             if stripped.startswith("@if "):
@@ -55,22 +68,11 @@ def opening_preview(source, count=PREVIEW_PAGE_COUNT, *, mature=True, text_versi
                 continue
             if not stripped or stripped.startswith(("@", ";", "*")):
                 continue
-            def inline(match):
-                tag = match.group(1).strip().lower()
-                if tag in ("lr", "l"):
-                    return "\n"
-                if tag in ("indent", "endindent"):
-                    return ""
-                if re.fullmatch(r"line\d+", tag):
-                    return "—"
-                raise ValueError(f"Unsupported inline tag on page {number}: {tag}")
-            lines.append(INLINE.sub(inline, stripped).strip())
-        if conditions:
-            raise ValueError(f"Unclosed condition on page {number}")
+            lines.append(render_inline(stripped, number).strip())
         text = "\n".join(lines).strip()
-        if not text:
-            raise ValueError(f"Opening page {number} is empty")
         pages.append(text)
+    if conditions:
+        raise ValueError("Unclosed condition at end of preview")
     return pages
 
 
@@ -92,8 +94,7 @@ def opening_voice_cues(source, pages):
             if not match:
                 continue
             spoken = next((line.strip() for line in lines[i + 1:] if line.strip() and not line.lstrip().startswith(("@", ";", "*"))), "")
-            spoken = re.sub(r"\[line\d+\]", "\u2014", spoken)
-            spoken = re.sub(r"\[(?:lr|l)\].*", "", spoken).strip()
+            spoken = render_inline(spoken, number).strip()
             if not spoken:
                 raise ValueError(f"Missing dialogue after voice cue on page {number}")
             offset = text.find(spoken, previous)

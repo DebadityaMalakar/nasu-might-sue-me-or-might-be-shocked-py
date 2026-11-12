@@ -1,0 +1,632 @@
+{
+  "version": 1,
+  "episode": "day1_opening",
+  "scene": "00",
+  "pages": [
+    {
+      "page": 0,
+      "background": "opening_fire.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": [
+        {
+          "type": "music_play",
+          "asset": "opening_bgm43.ogg"
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "background": "opening_fire.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 2,
+      "background": "opening_fire.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 3,
+      "background": "opening_fire.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 4,
+      "background": "opening_fire.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 5,
+      "background": "opening_aftermath.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 6,
+      "background": "opening_aftermath.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 7,
+      "background": "opening_aftermath.webp",
+      "sprite": null,
+      "music_state": "opening_bgm43.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 8,
+      "background": "#fff",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.6,
+      "events": [
+        {
+          "type": "music_stop",
+          "fadeout": 3.0
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "background": "#fff",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 10,
+      "background": "#000",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": [
+        {
+          "type": "music_play",
+          "asset": "opening_bgm42.ogg"
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "background": "#fff",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 12,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 13,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 14,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 15,
+      "background": "opening_sky.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 16,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 17,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 18,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 19,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 20,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 21,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 22,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 23,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 24,
+      "background": "opening_hospital.webp",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 25,
+      "background": "#000",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 26,
+      "background": "#000",
+      "sprite": null,
+      "music_state": "opening_bgm42.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 27,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.6,
+      "events": [
+        {
+          "type": "music_stop",
+          "fadeout": 2.0
+        }
+      ]
+    },
+    {
+      "page": 28,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 29,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 30,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 31,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 32,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 33,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 34,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.6,
+      "events": [
+        {
+          "type": "sound_play",
+          "asset": "opening_se019.wav"
+        }
+      ]
+    },
+    {
+      "page": 35,
+      "background": "#000",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 36,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.6,
+      "events": [
+        {
+          "type": "music_play",
+          "asset": "opening_bgm03.ogg",
+          "fadein": 1.0
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 38,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 39,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 40,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 41,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 42,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 43,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 44,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 45,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 46,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 47,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 48,
+      "background": "opening_shed.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 49,
+      "background": "opening_shed_inner.webp",
+      "sprite": "opening_sakura_13a.webp",
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.6,
+      "events": []
+    },
+    {
+      "page": 50,
+      "background": "opening_shed_inner.webp",
+      "sprite": "opening_sakura_13b.webp",
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 51,
+      "background": "opening_shed_inner.webp",
+      "sprite": "opening_sakura_06a.webp",
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 52,
+      "background": "opening_shed_inner.webp",
+      "sprite": "opening_sakura_09a.webp",
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 53,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 54,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 55,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 56,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 57,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 58,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 59,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 60,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 61,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 62,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 63,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 64,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": [
+        {
+          "type": "sound_play",
+          "asset": "opening_se247.wav"
+        }
+      ]
+    },
+    {
+      "page": 65,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 66,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 67,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 68,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 69,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 70,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": "opening_bgm03.ogg",
+      "transition_seconds": 0.0,
+      "events": []
+    },
+    {
+      "page": 71,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": [
+        {
+          "type": "music_stop",
+          "fadeout": 3.0
+        }
+      ]
+    },
+    {
+      "page": 72,
+      "background": "opening_shed_inner.webp",
+      "sprite": null,
+      "music_state": null,
+      "transition_seconds": 0.0,
+      "events": []
+    }
+  ]
+}

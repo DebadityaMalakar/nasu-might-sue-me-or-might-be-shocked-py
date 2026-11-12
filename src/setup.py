@@ -1,14 +1,22 @@
-﻿"""Initial local setup for the planned Fate port."""
+"""Initial local setup for the planned Fate port."""
 from __future__ import annotations
 
 import json
 import os
+import platform
 from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
-BASE_DEFAULT = r"C:\Program Files (x86)\Fate_StayNight_Realta_NuaFate"
-PATCH_DEFAULT = r"C:\Program Files (x86)\Fate_StayNight_Realta_NuaUltimateEdition"
+def suggested_directories(system=None):
+    """Only suggest known Windows installation paths."""
+    if (system or platform.system()) == "Windows":
+        return (r"C:\Program Files (x86)\Fate_StayNight_Realta_NuaFate",
+                r"C:\Program Files (x86)\Fate_StayNight_Realta_NuaUltimateEdition")
+    return "", ""
+
+
+BASE_DEFAULT, PATCH_DEFAULT = suggested_directories()
 GAMES = ("Game 1", "Game 2", "Game 3")
 CONFIG_PATH = Path(os.environ.get("LOCALAPPDATA", Path.home() / ".config")) / "FateRenpyPort" / "setup.json"
 

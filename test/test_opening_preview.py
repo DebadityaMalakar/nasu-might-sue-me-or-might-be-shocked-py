@@ -58,3 +58,15 @@ def test_voice_mapping_rejects_unmatched_dialogue():
     script = "*page0|\n@say storage=voice_a\nDialogue\n@pg"
     with pytest.raises(ValueError, match="Cannot locate voice dialogue"):
         opening_voice_cues(script, ["Different text"])
+
+
+def test_conditions_may_span_multiple_pages():
+    script = "\n".join(["*page0|", '@if exp="sf.gtext!=\'realta\'"', "First", "@pg", "*page1|", "Second", "@endif", "After", "@pg"])
+    assert opening_preview(script, count=2, text_version="classic") == ["First", "Second\nAfter"]
+    assert opening_preview(script, count=2, text_version="realta") == ["", "After"]
+
+
+def test_condition_must_close_within_requested_pages():
+    script = "*page0|\n@if exp=\"sf.gmature\"\nText\n@pg"
+    with pytest.raises(ValueError, match="Unclosed condition"):
+        opening_preview(script, count=1)

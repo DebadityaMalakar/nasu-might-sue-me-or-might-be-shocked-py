@@ -1,4 +1,4 @@
-﻿# Local game assets, extracts, and generated content
+# Local game assets, extracts, and generated content
 .ref/
 *.xp3
 .cache/
@@ -27,3 +27,7 @@ __pycache__/
 /src/renpy/log.txt
 /src/renpy/traceback.txt
 /src/renpy/errors.txt
+
+# Source-derived scene inventories are local game data.
+/src/renpy/game/episodes/episode_1_source.json
+/src/renpy/game/episodes/episode_2.json
