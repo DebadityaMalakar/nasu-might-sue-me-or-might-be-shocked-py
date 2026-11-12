@@ -25,6 +25,9 @@ def test_episode_inventories_have_consistent_frame_and_graph_counts():
         manifest = json.loads(path.read_text(encoding="utf-8"))
         assert manifest["page_count"] == count
         assert manifest["scene_count"] == len(manifest["scenes"]) == 14
+        scene_ids = [scene["scene"] for scene in manifest["scenes"]]
+        assert all(scene.isdecimal() for scene in scene_ids)
+        assert len(set(scene_ids)) == len(scene_ids)
         assert sum(scene["page_count"] for scene in manifest["scenes"]) == count
         assert all(scene["page_count"] == len(scene["pages"]) for scene in manifest["scenes"])
         ids = {node["id"] for node in manifest["flowchart"]["nodes"]}

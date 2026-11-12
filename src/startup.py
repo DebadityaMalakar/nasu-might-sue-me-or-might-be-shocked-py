@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import struct
 import subprocess
@@ -230,6 +231,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--renpy", type=Path, required=True, help="Path to renpy.exe in a RenPy SDK")
     parser.add_argument("--cheat", type=Path, metavar="DIRECTORY", help="Open the development jump tool from this directory")
+    parser.add_argument("--jump-day", choices=("1", "2"), default="1", help=argparse.SUPPRESS)
+    parser.add_argument("--jump-scene", default="00", help=argparse.SUPPRESS)
     parser.add_argument("--jump-page", type=int, choices=range(1, PREVIEW_PAGE_COUNT + 1), help=argparse.SUPPRESS)
     args = parser.parse_args()
     try:
@@ -244,11 +247,28 @@ def main():
         base = Path(config["games"][config["selected"]])
         if not args.renpy.is_file():
             raise ValueError("Select an existing RenPy SDK executable with --renpy")
+        if args.jump_day == "2":
+            if args.jump_page is None or not re.fullmatch(r"\d{2}", args.jump_scene):
+                raise ValueError("Choose a valid Day 2 scene and page")
+            sys.path.insert(0, str(PROJECT.parent.parent / "tools"))
+            from prepare_saber_days import prepare as prepare_days
+            day_data = prepare_days(Path(config["patches"]) / ENGLISH_NAME)
+            scene = day_data["days"]["2"]["scenes"].get(args.jump_scene)
+            if not scene or not 1 <= args.jump_page <= len(scene["pages"]):
+                raise ValueError("Requested Day 2 scene or page is unavailable")
+        elif args.jump_scene != "00":
+            raise ValueError("Only Day 1 scene 00 is available")
         prepare(base, PROJECT / "game" / "generated", Path(config["patches"]))
+        if args.jump_day == "2":
+            (PROJECT / "game" / "generated" / "saber_days.json").write_text(json.dumps(day_data, ensure_ascii=False), encoding="utf-8")
         launch_env = os.environ.copy()
         launch_env.pop("FATE_PORT_JUMP_PAGE", None)
+        launch_env.pop("FATE_PORT_JUMP_DAY", None)
+        launch_env.pop("FATE_PORT_JUMP_SCENE", None)
         if args.jump_page is not None:
             launch_env["FATE_PORT_JUMP_PAGE"] = str(args.jump_page)
+            launch_env["FATE_PORT_JUMP_DAY"] = args.jump_day
+            launch_env["FATE_PORT_JUMP_SCENE"] = args.jump_scene
         return subprocess.call([str(args.renpy.resolve()), str(PROJECT.resolve())], env=launch_env)
     except (OSError, ValueError, KeyError, TypeError, struct.error, zlib.error) as exc:
         print(f"Startup preparation failed: {exc}", file=sys.stderr)

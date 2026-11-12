@@ -71,7 +71,7 @@ def build(archive: Path, day: int):
             if not raw.startswith((b"\xff\xfe", b"\xfe\xff")):
                 raise ValueError(f"Unsupported encoding in scene {match.group(1)}")
             source = raw.decode("utf-16")
-            commands = Counter(match.group(1).lower() for line in source.splitlines() if (match := COMMAND.match(line)))
+            commands = Counter(command_match.group(1).lower() for line in source.splitlines() if (command_match := COMMAND.match(line)))
             frames = inventory(source)
             if [frame["page"] for frame in frames] != list(range(len(frames))):
                 raise ValueError(f"Unexpected page labels in scene {match.group(1)}")

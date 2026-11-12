@@ -45,3 +45,19 @@ def test_cheat_flag_reports_missing_tool(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr(sys, "argv", ["startup.py", "--renpy", str(sdk), "--cheat", str(tmp_path)])
     assert startup.main() == 1
     assert "No jump_tool.py" in capsys.readouterr().err
+
+
+def test_day2_command_has_explicit_destination(tmp_path):
+    sdk = tmp_path / "renpy.exe"
+    sdk.touch()
+    command = command_for(str(sdk), "19", "2", "00", 19)
+    assert command[-4:] == ["--jump-day", "2", "--jump-scene", "00"]
+    with pytest.raises(ValueError, match="1 to 19"):
+        command_for(str(sdk), "20", "2", "00", 19)
+
+
+def test_rejects_invalid_scene_identifier(tmp_path):
+    sdk = tmp_path / "renpy.exe"
+    sdk.touch()
+    with pytest.raises(ValueError, match="available day"):
+        command_for(str(sdk), "1", "2", "../bad", 19)

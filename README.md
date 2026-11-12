@@ -39,12 +39,12 @@ python tools/jump_tool.py
 python src/startup.py --renpy "C:\path\to\renpy-sdk\renpy.exe" --cheat tools
 ```
 
-It currently jumps only within Day 1 opening scene 00, pages 1-73. It starts a fresh session and restores only the preview's background and music; it does not reconstruct skipped choices, flags, or saves. Archive checks still apply.
-
-## License
-
-The port's original code is licensed under the [MIT License](LICENSE). The original game and its assets are separately owned and are not covered by this license. The optional `tcwfutil` converter has its own GPL-2.0 license.
+Choose Day 1 or Day 2, then a scene and page. The tool reads Day 2 scene counts from the verified English patch and generates the local text cache when launching a Day 2 preview. Day 2 previews have no route state, voices, backgrounds, or effects and are not a playable route. A jump starts a fresh session and does not reconstruct skipped choices, flags, or saves. Archive checks still apply.
 
 The developer tool `python tools/prepare_saber_days.py "<patch directory>"` can prepare local text, voice-cue, and flowchart data for the Day 1 and Day 2 source files. This cache is ignored by Git and excluded from Ren'Py distributions. It is preparation data, not a playable route: flowchart conditions, choices, effects, and later scenes still require implementation.
 
 The Day 1 and Day 2 source cue inventories are generated locally using `tools/build_episode_manifest.py` and excluded from Git and distributions. Tests that inspect these optional inventories are skipped if they have not been generated.
+
+## License
+
+The port's original code is licensed under the [MIT License](LICENSE). The original game and its assets are separately owned and are not covered by this license. The optional `tcwfutil` converter has its own GPL-2.0 license.

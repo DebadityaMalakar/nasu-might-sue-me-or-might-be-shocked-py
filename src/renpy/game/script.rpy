@@ -132,6 +132,17 @@ init python:
 
 label start:
     scene black
+    $ debug_day = os.environ.pop("FATE_PORT_JUMP_DAY", "1")
+    $ debug_scene = os.environ.pop("FATE_PORT_JUMP_SCENE", "00")
+    if debug_day == "2":
+        $ debug_path = Path(config.gamedir) / "generated" / "saber_days.json"
+        $ debug_data = json.loads(debug_path.read_text(encoding="utf-8"))
+        $ debug_pages = debug_data["days"]["2"]["scenes"][debug_scene]["pages"]
+        $ debug_value = os.environ.pop("FATE_PORT_JUMP_PAGE", "1")
+        $ debug_index = int(debug_value) - 1 if debug_value.isdecimal() else 0
+        $ debug_index = debug_index if 0 <= debug_index < len(debug_pages) else 0
+        call screen day2_text_preview(debug_pages, debug_scene, debug_index)
+        return
     $ preview_file = Path(config.gamedir) / "generated" / "opening_preview.json"
     $ preview_pages = json.loads(preview_file.read_text(encoding="utf-8"))
     $ cue_file = Path(config.gamedir) / "generated" / "opening_voice_cues.json"
@@ -202,3 +213,31 @@ screen route_choices(choices, loaded_games):
                         sensitive route_selection.choice_available(frozenset(requirements), frozenset(loaded_games))
                         action Return(result)
                         text_insensitive_color "#777777"
+
+# Development-only source preview: no branch state or audiovisual cues.
+screen day2_text_preview(pages, scene, start_index=0):
+    modal True
+    default page_index = start_index
+    default visible_chars = 0
+    fixed:
+        xysize (800, 600)
+        at stage_4_3
+        add Solid("#080a10")
+        text "DAY 2 / SCENE [scene] - TEXT-ONLY PREVIEW" xpos 48 ypos 32 size 17 color "#91a9c5"
+        text "No route state, voices, backgrounds, or effects" xpos 48 ypos 58 size 14 color "#9299a2"
+        text pages[page_index][:visible_chars]:
+            xpos 60 ypos 132 xmaximum 680 size 24 color "#f3f2ee" line_spacing 7 substitute False
+        text "[page_index + 1] / [len(pages)]" xpos 60 ypos 540 size 15 color "#9299a2"
+        if visible_chars < len(pages[page_index]):
+            timer 0.03 repeat True action SetScreenVariable("visible_chars", min(visible_chars + 1, len(pages[page_index])))
+            textbutton "Show text":
+                xalign 0.9 yalign 0.92 action SetScreenVariable("visible_chars", len(pages[page_index]))
+            key "dismiss" action SetScreenVariable("visible_chars", len(pages[page_index]))
+        elif page_index < len(pages) - 1:
+            textbutton "Next":
+                xalign 0.9 yalign 0.92 action [SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
+            key "dismiss" action [SetScreenVariable("page_index", page_index + 1), SetScreenVariable("visible_chars", 0)]
+        else:
+            textbutton "Return to title":
+                xalign 0.9 yalign 0.92 action Return()
+            key "dismiss" action Return()
