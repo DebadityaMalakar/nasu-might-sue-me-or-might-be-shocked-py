@@ -1,0 +1,8201 @@
+{
+  "version": 1,
+  "episode": "day2",
+  "source_archive": "patch_lang_english.xp3",
+  "source_sha256": "30a883c0281d8ecb038b440f69a1becfe74be44fc3061216ef3c6ad6ccb31d6f",
+  "status": "partial source cue inventory; conditions and omitted commands are not executed; not playable",
+  "scene_count": 14,
+  "page_count": 384,
+  "scenes": [
+    {
+      "scene": "00",
+      "page_count": 19,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "date_title": 1,
+        "dispscroll": 1,
+        "download": 1,
+        "else": 1,
+        "endif": 3,
+        "eval": 1,
+        "i2it": 1,
+        "if": 3,
+        "pg": 18,
+        "r": 3,
+        "rclick": 1,
+        "resetvoice": 1,
+        "setbgmnonstopmode": 1,
+        "textoff": 5,
+        "texton": 5
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "400",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm42",
+                "time": "0"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "19瞑想時の剣",
+                "time": "1000",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "flushover",
+              "attributes": {
+                "method": "crossfade",
+                "time": "100"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se028"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "19瞑想時の剣",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": []
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": []
+        },
+        {
+          "page": 6,
+          "events": []
+        },
+        {
+          "page": 7,
+          "events": []
+        },
+        {
+          "page": 8,
+          "events": []
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": []
+        },
+        {
+          "page": 11,
+          "events": []
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "flushover",
+              "attributes": {
+                "method": "crossfade",
+                "time": "100"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se028"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "flushover",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "800",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se247"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(早朝)",
+                "time": "2000",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0200_shi_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0200_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": []
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0200_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0200_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "01",
+      "page_count": 26,
+      "commands_not_in_cue_inventory": {
+        "a2at": 1,
+        "cm": 1,
+        "dashcombot": 1,
+        "dispscroll": 2,
+        "download": 1,
+        "eval": 1,
+        "font": 1,
+        "i2ot": 1,
+        "pg": 25,
+        "quaket": 1,
+        "r": 3,
+        "rclick": 1,
+        "resetvoice": 1,
+        "rf": 1,
+        "shock": 1,
+        "textoff": 7,
+        "texton": 6
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "o交差点-(夜)",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se005",
+                "time": "1000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": []
+        },
+        {
+          "page": 3,
+          "events": []
+        },
+        {
+          "page": 4,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "2000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0000"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤09a腕B(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤02a腕A(中)",
+                "index": "5000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0010"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤02b腕A(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0010"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0030"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤02a腕C(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤02b腕B(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0040"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0050"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0070"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0060"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0090"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "rule": "走る感じ",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "0"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター上から",
+                "time": "100",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se163"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "M02タイガーぱんちb",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "flushover",
+              "attributes": {
+                "method": "crossfade",
+                "time": "200"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm59",
+                "time": "0"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "藤05a(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸居間-(夜)",
+                "time": "800",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0080"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0110"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤05b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤08b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0100"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤08d(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0110"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤02b腕B(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0120"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤09a腕B(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸台所-(夜)",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0150"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0140"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_shi_0160"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "藤01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0201_tig_0150"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "4000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 24,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1000",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(夜)",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se287"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(深夜)",
+                "time": "200",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1500",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "3000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "03",
+      "page_count": 52,
+      "commands_not_in_cue_inventory": {
+        "cm": 2,
+        "darkenofft": 1,
+        "darkent": 1,
+        "dispscroll": 1,
+        "download": 1,
+        "endif": 1,
+        "eval": 1,
+        "i2it": 1,
+        "if": 1,
+        "pg": 51,
+        "r": 3,
+        "rclick": 1,
+        "rep": 1,
+        "resetvoice": 1,
+        "shock": 1,
+        "shockt": 1,
+        "superpose": 1,
+        "superpose_off": 1,
+        "textoff": 14,
+        "texton": 13
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm44",
+                "time": "0"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0020"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "black",
+                "time": "1000",
+                "rule": "チェッカー",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸台所",
+                "time": "800",
+                "rule": "やや細かい縦ブラインド(左から右へ)",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se190"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se190"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "5000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0050"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0010"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0080"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0030"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "桜制服07c(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm58",
+                "time": "0"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸居間",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸台所",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0050"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服06a(中)",
+                "index": "5000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服02b(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0060"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0120"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服03d(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0130"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服09a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0080"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0140"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服06a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0090"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0100"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0150"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "藤05a(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸居間",
+                "time": "1000",
+                "rule": "やや細かい縦ブラインド(左から右へ)",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_tig_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "ldall",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0110"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "left",
+                "file": "藤01b(中)",
+                "index": "1000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_tig_0001"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "right",
+                "file": "桜エプロン03d(中)",
+                "index": "2000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": []
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "left",
+                "file": "藤01d(中)",
+                "index": "1000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "500"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "left",
+                "file": "藤08d(中)",
+                "index": "1000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_tig_0010"
+              }
+            },
+            {
+              "type": "cl_auto",
+              "attributes": {
+                "pos": "left",
+                "index": "1000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "right",
+                "file": "桜エプロン05d頬(中)",
+                "index": "2000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "right",
+                "file": "桜エプロン09e頬(中)",
+                "index": "2000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "cl_auto",
+              "attributes": {
+                "pos": "right",
+                "index": "2000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸台所",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0170"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0180"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0190"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン05e(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": []
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン05d(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0200"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン06a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 24,
+          "events": []
+        },
+        {
+          "page": 25,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0210"
+              }
+            }
+          ]
+        },
+        {
+          "page": 26,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン07e(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0150"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン06c(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン06a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0160"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0170"
+              }
+            }
+          ]
+        },
+        {
+          "page": 28,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0220"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン06c(中)",
+                "index": "5000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "300"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン06a(中)",
+                "index": "5000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0180"
+              }
+            }
+          ]
+        },
+        {
+          "page": 29,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0230"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 30,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン08f(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0190"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 31,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0250"
+              }
+            }
+          ]
+        },
+        {
+          "page": 32,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0260"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン01c(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0200"
+              }
+            }
+          ]
+        },
+        {
+          "page": 33,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン08g(中)",
+                "index": "5000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 34,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0270"
+              }
+            }
+          ]
+        },
+        {
+          "page": 35,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "4000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0280"
+              }
+            }
+          ]
+        },
+        {
+          "page": 36,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0210"
+              }
+            }
+          ]
+        },
+        {
+          "page": 37,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0290"
+              }
+            }
+          ]
+        },
+        {
+          "page": 38,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0300"
+              }
+            }
+          ]
+        },
+        {
+          "page": 39,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm08",
+                "time": "3000"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン08a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 40,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0310"
+              }
+            },
+            {
+              "type": "cl_auto",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 41,
+          "events": [
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜エプロン13c(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸廊下",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "4000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 42,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "桜制服13b(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸玄関",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm03",
+                "time": "0"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0220"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0320"
+              }
+            }
+          ]
+        },
+        {
+          "page": 43,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服01c(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0230"
+              }
+            }
+          ]
+        },
+        {
+          "page": 44,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0330"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服01b(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 45,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_sak_0250"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 46,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸居間",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 47,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0340"
+              }
+            }
+          ]
+        },
+        {
+          "page": 48,
+          "events": []
+        },
+        {
+          "page": 49,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0203_shi_0350"
+              }
+            }
+          ]
+        },
+        {
+          "page": 50,
+          "events": []
+        },
+        {
+          "page": 51,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "04",
+      "page_count": 34,
+      "commands_not_in_cue_inventory": {
+        "a2a": 1,
+        "a2at": 1,
+        "black": 1,
+        "cm": 1,
+        "dispscroll": 2,
+        "download": 2,
+        "endif": 3,
+        "eval": 1,
+        "if": 3,
+        "interlude_end": 2,
+        "interlude_start": 2,
+        "pg": 33,
+        "r": 28,
+        "rclick": 1,
+        "resetvoice": 1,
+        "smudgeofft": 1,
+        "smudget": 1,
+        "textoff": 7,
+        "texton": 6
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se059"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "500"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se058"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o駅前パーク-(夕)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": []
+        },
+        {
+          "page": 3,
+          "events": []
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm43",
+                "time": "3000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": []
+        },
+        {
+          "page": 9,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 10,
+          "events": []
+        },
+        {
+          "page": 11,
+          "events": []
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_kir_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": []
+        },
+        {
+          "page": 14,
+          "events": []
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_kir_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": []
+        },
+        {
+          "page": 17,
+          "events": []
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se367"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o大火災跡-(夕)",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "oビル街-(夜)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": []
+        },
+        {
+          "page": 24,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0090"
+              }
+            }
+          ]
+        },
+        {
+          "page": 26,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター下から",
+                "time": "800",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm75",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "imageex",
+              "attributes": {
+                "storage": "A05h1200",
+                "layer": "0",
+                "left": "0",
+                "top": "-500",
+                "opacity": "0"
+              }
+            },
+            {
+              "type": "move",
+              "attributes": {
+                "layer": "0",
+                "path": "(0,0,255)",
+                "time": "4000"
+              }
+            },
+            {
+              "type": "wm",
+              "attributes": {}
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "200"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "A05",
+                "time": "600",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "events": []
+        },
+        {
+          "page": 28,
+          "events": []
+        },
+        {
+          "page": 29,
+          "events": []
+        },
+        {
+          "page": 30,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "A05b",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0110"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "3000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 31,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター上から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "oビル街-(夜)",
+                "time": "1000",
+                "rule": "シャッター上から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 32,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 33,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1500"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "05",
+      "page_count": 9,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "download": 1,
+        "eval": 1,
+        "i2it": 1,
+        "pg": 8,
+        "r": 1,
+        "rclick": 1,
+        "rep": 1,
+        "resetvoice": 1,
+        "textoff": 3,
+        "texton": 2
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0205_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se254",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0205_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0205_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": []
+        },
+        {
+          "page": 6,
+          "events": []
+        },
+        {
+          "page": 7,
+          "events": []
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se254",
+                "time": "800"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "06",
+      "page_count": 12,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "dispscroll": 1,
+        "download": 1,
+        "eval": 1,
+        "i2it": 1,
+        "pasttime": 1,
+        "pg": 11,
+        "r": 2,
+        "rclick": 1,
+        "rep": 1,
+        "resetvoice": 1,
+        "textoff": 3,
+        "texton": 2
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0206_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se254",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0206_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": []
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": []
+        },
+        {
+          "page": 6,
+          "events": []
+        },
+        {
+          "page": 7,
+          "events": []
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0206_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0206_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se254",
+                "time": "2000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "black",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "07",
+      "page_count": 46,
+      "commands_not_in_cue_inventory": {
+        "a2at": 2,
+        "cm": 1,
+        "dispscroll": 1,
+        "download": 1,
+        "else": 1,
+        "endif": 1,
+        "eval": 1,
+        "i2it": 1,
+        "if": 1,
+        "pg": 45,
+        "rclick": 1,
+        "resetvoice": 1,
+        "textoff": 10,
+        "texton": 9
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸玄関",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se024"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "2000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "black",
+                "time": "1000",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm58",
+                "time": "0"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o学園正門-(昼)",
+                "time": "1500",
+                "rule": "やや細かい縦ブラインド(左から右へ)",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se256",
+                "time": "800"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0000"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0010"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": []
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0020"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0030"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0040"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0050"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0040"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0100"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0050"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0120"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0140"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0150"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0160"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0170"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0180"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "500",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "凛制服コート01a(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i学園廊下",
+                "time": "500",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "800",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "美綴弓道着01a(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o学園校庭-(昼)",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0190"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0200"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0210"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 24,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0220"
+              }
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "events": []
+        },
+        {
+          "page": 26,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0230"
+              }
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0150"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "美綴弓道着01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_mit_0240"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 28,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0160"
+              }
+            }
+          ]
+        },
+        {
+          "page": 29,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se256",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "black",
+                "time": "2000",
+                "rule": "やや細かい縦ブラインド(左から右へ)",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i学園会議室",
+                "time": "1000",
+                "rule": "チェッカー",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 30,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0170"
+              }
+            }
+          ]
+        },
+        {
+          "page": 31,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成02a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0010"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0020"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0180"
+              }
+            }
+          ]
+        },
+        {
+          "page": 32,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 33,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0190"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 34,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0040"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0200"
+              }
+            }
+          ]
+        },
+        {
+          "page": 35,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 36,
+          "events": []
+        },
+        {
+          "page": 37,
+          "events": [
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se253",
+                "time": "1500"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "800"
+              }
+            }
+          ]
+        },
+        {
+          "page": 38,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "i学園会議室",
+                "time": "800",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0210"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 39,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0220"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 40,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "3000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 41,
+          "events": [
+            {
+              "type": "cl_auto",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se252"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm05",
+                "time": "0"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "left",
+                "file": "葛木01a眼鏡(遠)",
+                "index": "1000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_kuz_0000"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "right",
+                "file": "一成01a(中)",
+                "index": "2000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_ise_0080"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "all",
+                "index": "2000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 42,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0230"
+              }
+            }
+          ]
+        },
+        {
+          "page": 43,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0207_shi_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 44,
+          "events": []
+        },
+        {
+          "page": 45,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1500",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "08",
+      "page_count": 59,
+      "commands_not_in_cue_inventory": {
+        "a2a": 1,
+        "a2at": 1,
+        "black": 1,
+        "cm": 1,
+        "dispscroll": 2,
+        "download": 2,
+        "endif": 6,
+        "eval": 1,
+        "i2ot": 1,
+        "if": 6,
+        "interlude_end": 2,
+        "interlude_start": 2,
+        "pg": 58,
+        "r": 32,
+        "rclick": 1,
+        "resetvoice": 1,
+        "shockt": 1,
+        "smudgeofft": 1,
+        "smudget": 1,
+        "textoff": 9,
+        "texton": 8,
+        "trailon": 1
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "400"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03e(近)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03e(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0040"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0020"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0030"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03e(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0050"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0080"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成02a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0090"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0130"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0090"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0140"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成02a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0150"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0160"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成02a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": []
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0170"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成03a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0130"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0180"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0150"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0160"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0170"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成02c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "一成01a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_ise_0180"
+              }
+            }
+          ]
+        },
+        {
+          "page": 24,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1500",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se058"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "500"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se059"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o駅前パーク-(夕)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 26,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0190"
+              }
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "events": []
+        },
+        {
+          "page": 28,
+          "events": []
+        },
+        {
+          "page": 29,
+          "events": []
+        },
+        {
+          "page": 30,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm43",
+                "time": "3000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 31,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0200"
+              }
+            }
+          ]
+        },
+        {
+          "page": 32,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0210"
+              }
+            }
+          ]
+        },
+        {
+          "page": 33,
+          "events": []
+        },
+        {
+          "page": 34,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0220"
+              }
+            }
+          ]
+        },
+        {
+          "page": 35,
+          "events": []
+        },
+        {
+          "page": 36,
+          "events": []
+        },
+        {
+          "page": 37,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_kir_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 38,
+          "events": []
+        },
+        {
+          "page": 39,
+          "events": []
+        },
+        {
+          "page": 40,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_kir_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 41,
+          "events": []
+        },
+        {
+          "page": 42,
+          "events": []
+        },
+        {
+          "page": 43,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0230"
+              }
+            }
+          ]
+        },
+        {
+          "page": 44,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 45,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0250"
+              }
+            }
+          ]
+        },
+        {
+          "page": 46,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se367"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o大火災跡-(夕)",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0260"
+              }
+            },
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "1500"
+              }
+            }
+          ]
+        },
+        {
+          "page": 47,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "oビル街-(夜)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 48,
+          "events": []
+        },
+        {
+          "page": 49,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0270"
+              }
+            }
+          ]
+        },
+        {
+          "page": 50,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0280"
+              }
+            }
+          ]
+        },
+        {
+          "page": 51,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター下から",
+                "time": "800",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm75",
+                "time": "3000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "imageex",
+              "attributes": {
+                "storage": "A05h1200",
+                "layer": "0",
+                "left": "0",
+                "top": "-500",
+                "opacity": "0"
+              }
+            },
+            {
+              "type": "move",
+              "attributes": {
+                "layer": "0",
+                "path": "(0,0,255)",
+                "time": "4000"
+              }
+            },
+            {
+              "type": "wm",
+              "attributes": {}
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "200"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "A05",
+                "time": "600",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1500"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0204_shi_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 52,
+          "events": []
+        },
+        {
+          "page": 53,
+          "events": []
+        },
+        {
+          "page": 54,
+          "events": []
+        },
+        {
+          "page": 55,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "A05b",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0300"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "4000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0310"
+              }
+            }
+          ]
+        },
+        {
+          "page": 56,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター上から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se009",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "oビル街-(夜)",
+                "time": "1000",
+                "rule": "シャッター上から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 57,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0208_shi_0320"
+              }
+            }
+          ]
+        },
+        {
+          "page": 58,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se009",
+                "time": "1500"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "09",
+      "page_count": 1,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "download": 1,
+        "eval": 1,
+        "rclick": 1,
+        "resetvoice": 1,
+        "texton": 1
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se020"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i教室-(夕2)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "10",
+      "page_count": 63,
+      "commands_not_in_cue_inventory": {
+        "chgfg": 12,
+        "clfg": 5,
+        "dash": 2,
+        "dispscroll": 10,
+        "download": 1,
+        "eval": 1,
+        "fg": 3,
+        "pg": 62,
+        "r": 4,
+        "rep": 1,
+        "resetvoice": 1,
+        "sethollowmode": 1,
+        "shock": 1,
+        "stopdash": 2,
+        "textoff": 4,
+        "transex": 2
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": []
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm07",
+                "time": "0"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i学園廊下-(夕2)",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i教室-(夕2)",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0010"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0030"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0040"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se308"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0060"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0060"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0090"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0100"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": []
+        },
+        {
+          "page": 17,
+          "events": []
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0110"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0140"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0150"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0160"
+              }
+            }
+          ]
+        },
+        {
+          "page": 23,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 24,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0170"
+              }
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 26,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0180"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0190"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 28,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se021"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i学園廊下-(夕2)",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1500"
+              }
+            }
+          ]
+        },
+        {
+          "page": 29,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm06",
+                "time": "0"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "01空・夕方b",
+                "time": "1000",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 30,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター上から",
+                "vague": "64",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i教室-(夕2)",
+                "time": "1000",
+                "rule": "シャッター上から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 31,
+          "events": []
+        },
+        {
+          "page": 32,
+          "events": []
+        },
+        {
+          "page": 33,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "800",
+                "storage": "c_cs01"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "600",
+                "storage": "black"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "200"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "54昔の桜",
+                "time": "800",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "300"
+              }
+            }
+          ]
+        },
+        {
+          "page": 34,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "800",
+                "storage": "white"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 35,
+          "events": []
+        },
+        {
+          "page": 36,
+          "events": []
+        },
+        {
+          "page": 37,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "01空・夕方b",
+                "time": "800",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "800",
+                "storage": "c_cs01"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0150"
+              }
+            }
+          ]
+        },
+        {
+          "page": 38,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0200"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0160"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0210"
+              }
+            }
+          ]
+        },
+        {
+          "page": 39,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0170"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0180"
+              }
+            }
+          ]
+        },
+        {
+          "page": 40,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "01空・夕方b",
+                "time": "600",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0190"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0200"
+              }
+            }
+          ]
+        },
+        {
+          "page": 41,
+          "events": []
+        },
+        {
+          "page": 42,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "600",
+                "storage": "black"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "1000",
+                "storage": "cs30棒高跳び"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0210"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0220"
+              }
+            }
+          ]
+        },
+        {
+          "page": 43,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0230"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 44,
+          "events": []
+        },
+        {
+          "page": 45,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0250"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0260"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0270"
+              }
+            }
+          ]
+        },
+        {
+          "page": 46,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0220"
+              }
+            }
+          ]
+        },
+        {
+          "page": 47,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "800",
+                "storage": "white"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "800",
+                "storage": "c_cs01b_d"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0280"
+              }
+            }
+          ]
+        },
+        {
+          "page": 48,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b_b"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0290"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0300"
+              }
+            }
+          ]
+        },
+        {
+          "page": 49,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0230"
+              }
+            }
+          ]
+        },
+        {
+          "page": 50,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b_e"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0310"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0240"
+              }
+            }
+          ]
+        },
+        {
+          "page": 51,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b_b"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0320"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0330"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0340"
+              }
+            }
+          ]
+        },
+        {
+          "page": 52,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0250"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b_e"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0350"
+              }
+            }
+          ]
+        },
+        {
+          "page": 53,
+          "events": []
+        },
+        {
+          "page": 54,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0260"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0360"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0370"
+              }
+            }
+          ]
+        },
+        {
+          "page": 55,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "400",
+                "storage": "c_cs01b_d"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0380"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0270"
+              }
+            }
+          ]
+        },
+        {
+          "page": 56,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "01空・夕方b",
+                "time": "800",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0390"
+              }
+            }
+          ]
+        },
+        {
+          "page": 57,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0280"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se020"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "time": "900",
+                "storage": "i教室-(夕2)"
+              }
+            }
+          ]
+        },
+        {
+          "page": 58,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0290"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0300"
+              }
+            }
+          ]
+        },
+        {
+          "page": 59,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 60,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "4000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0310"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_sak_0410"
+              }
+            }
+          ]
+        },
+        {
+          "page": 61,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0210_shi_0320"
+              }
+            }
+          ]
+        },
+        {
+          "page": 62,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "13",
+      "page_count": 18,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "date_title": 1,
+        "dispscroll": 1,
+        "download": 1,
+        "else": 1,
+        "endif": 3,
+        "eval": 1,
+        "i2it": 1,
+        "if": 3,
+        "pg": 17,
+        "r": 3,
+        "rclick": 1,
+        "resetvoice": 1,
+        "setbgmnonstopmode": 1,
+        "textoff": 5,
+        "texton": 5
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "400",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm42",
+                "time": "0"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "19瞑想時の剣",
+                "time": "1000",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "flushover",
+              "attributes": {
+                "method": "crossfade",
+                "time": "100"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se028"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "19瞑想時の剣",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": []
+        },
+        {
+          "page": 4,
+          "events": []
+        },
+        {
+          "page": 5,
+          "events": []
+        },
+        {
+          "page": 6,
+          "events": []
+        },
+        {
+          "page": 7,
+          "events": []
+        },
+        {
+          "page": 8,
+          "events": []
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": []
+        },
+        {
+          "page": 11,
+          "events": []
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "flushover",
+              "attributes": {
+                "method": "crossfade",
+                "time": "100"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se028"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "flushover",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "800",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se247"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(早朝)",
+                "time": "2000",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0213_shi_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0213_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": []
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0213_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm04",
+                "time": "0"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0213_shi_0030"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "14",
+      "page_count": 23,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "download": 1,
+        "eval": 1,
+        "pg": 22,
+        "r": 1,
+        "rclick": 1,
+        "resetvoice": 1,
+        "shockt": 1,
+        "textoff": 5,
+        "texton": 4
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "bg",
+              "attributes": {
+                "file": "o交差点-(夜)",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "method": "crossfade",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se005",
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o間桐邸外観(窓d)-(夜)",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se221",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0030"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "o間桐邸外観(窓d)-(夜)",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "臓硯01a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "臓硯01e(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "臓硯01d(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0020"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0030"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "臓硯01c(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0050"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "臓硯01a(中)",
+                "index": "5000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0050"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0060"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0060"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01e(遠)",
+                "index": "3000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0080"
+              }
+            }
+          ]
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0070"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0090"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01a(遠)",
+                "index": "3000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01b(遠)",
+                "index": "3000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0080"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01e(遠)",
+                "index": "3000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0110"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0120"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_shi_0090"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01d(遠)",
+                "index": "3000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0130"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se005",
+                "time": "800"
+              }
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "leftcenter",
+                "file": "臓硯01b(遠)",
+                "index": "3000",
+                "time": "400",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0214_zok_0140"
+              }
+            },
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "leftcenter",
+                "index": "3000",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "sestop",
+              "attributes": {
+                "file": "se221",
+                "time": "400"
+              }
+            }
+          ]
+        },
+        {
+          "page": 21,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1000",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(夜)",
+                "time": "1000",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se287"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i士郎部屋開き-(深夜)",
+                "time": "200",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 22,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1500",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "wait",
+              "attributes": {
+                "time": "3000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "15",
+      "page_count": 20,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "download": 1,
+        "else": 4,
+        "endif": 7,
+        "eval": 1,
+        "if": 7,
+        "pg": 19,
+        "rclick": 1,
+        "resetvoice": 1,
+        "shockt": 1,
+        "textoff": 7,
+        "texton": 6
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "cl_notrans",
+              "attributes": {
+                "pos": "all"
+              }
+            },
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm03",
+                "time": "0"
+              }
+            },
+            {
+              "type": "ld_notrans",
+              "attributes": {
+                "file": "桜制服01a(中)",
+                "pos": "c",
+                "index": "5000"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸居間",
+                "time": "800",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0000"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0000"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服06c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0010"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "ldallt",
+              "attributes": {
+                "method": "crossfade",
+                "time": "400"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_tig_0000"
+              }
+            }
+          ]
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "シャッター左から",
+                "vague": "64",
+                "time": "400"
+              }
+            },
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i衛宮邸台所",
+                "time": "400",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0010"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0020"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服04a(中)",
+                "index": "5000",
+                "time": "300",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0030"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服08e(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 4,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "400"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0040"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服09b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0030"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0050"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服13a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0040"
+              }
+            }
+          ]
+        },
+        {
+          "page": 5,
+          "events": [
+            {
+              "type": "seloop",
+              "attributes": {
+                "file": "se253",
+                "time": "1500"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服12a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0060"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服12c(中)",
+                "index": "5000",
+                "time": "200",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0050"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0060"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0070"
+              }
+            }
+          ]
+        },
+        {
+          "page": 6,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服12b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0070"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服12c(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 7,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0080"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服07b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0080"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0090"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服01b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 8,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "events": []
+        },
+        {
+          "page": 10,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服08b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0090"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0100"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服10a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0100"
+              }
+            }
+          ]
+        },
+        {
+          "page": 11,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0110"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0120"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服13a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0110"
+              }
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "events": [
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服13b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0130"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服10a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "events": [
+            {
+              "type": "cl",
+              "attributes": {
+                "pos": "center",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            }
+          ]
+        },
+        {
+          "page": 14,
+          "events": []
+        },
+        {
+          "page": 15,
+          "events": [
+            {
+              "type": "sestop",
+              "attributes": {
+                "time": "3000"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服08d(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0120"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0140"
+              }
+            }
+          ]
+        },
+        {
+          "page": 16,
+          "events": [
+            {
+              "type": "play",
+              "attributes": {
+                "file": "bgm05",
+                "time": "1000"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服05b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0130"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0150"
+              }
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "events": [
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0160"
+              }
+            },
+            {
+              "type": "ld",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服08a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0140"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_shi_0170"
+              }
+            }
+          ]
+        },
+        {
+          "page": 18,
+          "events": [
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服10b(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "1000"
+              }
+            },
+            {
+              "type": "ld_auto",
+              "attributes": {
+                "pos": "center",
+                "file": "桜制服09a(中)",
+                "index": "5000",
+                "time": "300",
+                "method": "crossfade"
+              }
+            },
+            {
+              "type": "say",
+              "attributes": {
+                "storage": "sav0215_sak_0150"
+              }
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "events": [
+            {
+              "type": "playstop",
+              "attributes": {
+                "time": "800"
+              }
+            },
+            {
+              "type": "blackout",
+              "attributes": {
+                "rule": "クロスフェード",
+                "time": "1000",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "waitt",
+              "attributes": {
+                "time": "2000"
+              }
+            },
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "16",
+      "page_count": 2,
+      "commands_not_in_cue_inventory": {
+        "cm": 1,
+        "download": 1,
+        "eval": 1,
+        "pg": 1,
+        "rclick": 1,
+        "resetvoice": 1,
+        "textoff": 1,
+        "texton": 1
+      },
+      "pages": [
+        {
+          "page": 0,
+          "events": [
+            {
+              "type": "fadein",
+              "attributes": {
+                "file": "i教室-(夕2)",
+                "time": "1500",
+                "rule": "シャッター左から",
+                "vague": "64"
+              }
+            },
+            {
+              "type": "se",
+              "attributes": {
+                "file": "se020"
+              }
+            }
+          ]
+        },
+        {
+          "page": 1,
+          "events": [
+            {
+              "type": "return",
+              "attributes": {}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "flowchart": {
+    "nodes": [
+      {
+        "id": 0,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:2:1"
+        ]
+      },
+      {
+        "id": 1,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:11:7"
+        ]
+      },
+      {
+        "id": 2,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "1:道場説明//1//1:1:6:5",
+          "0:1:5:4"
+        ]
+      },
+      {
+        "id": 3,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:7:6"
+        ]
+      },
+      {
+        "id": 4,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:14:16"
+        ]
+      },
+      {
+        "id": 5,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:15:8"
+        ]
+      },
+      {
+        "id": 6,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:15:9"
+        ]
+      },
+      {
+        "id": 7,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "1:桜ルート分岐//5//2:1:9:11",
+          "0:1:16:10"
+        ]
+      },
+      {
+        "id": 8,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:1:3"
+        ]
+      },
+      {
+        "id": 9,
+        "kind": "SELECTER",
+        "choices": [
+          {
+            "target": 8,
+            "route": 12
+          },
+          {
+            "target": 10,
+            "route": 13
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": 10,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:4:15"
+        ]
+      },
+      {
+        "id": 11,
+        "kind": "OUTERLABEL",
+        "choices": [],
+        "conditions": []
+      },
+      {
+        "id": 12,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "2:桜ルート分岐//5//1:桜好感度//5//1:1:13:17",
+          "0:1:0:0"
+        ]
+      },
+      {
+        "id": 13,
+        "kind": "SELECTER",
+        "choices": [
+          {
+            "target": 2,
+            "route": 18
+          },
+          {
+            "target": 3,
+            "route": 2
+          }
+        ],
+        "conditions": []
+      },
+      {
+        "id": 14,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:11:14"
+        ]
+      },
+      {
+        "id": 15,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:7:19"
+        ]
+      },
+      {
+        "id": 16,
+        "kind": "SCENE",
+        "choices": [],
+        "conditions": [
+          "0:1:8:20"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": 0,
+        "source": 12,
+        "target": 0
+      },
+      {
+        "id": 1,
+        "source": 0,
+        "target": 2
+      },
+      {
+        "id": 2,
+        "source": 13,
+        "target": 3
+      },
+      {
+        "id": 3,
+        "source": 8,
+        "target": 1
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 5
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 6
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 7
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 11
+      },
+      {
+        "id": 8,
+        "source": 5,
+        "target": 15
+      },
+      {
+        "id": 9,
+        "source": 6,
+        "target": 15
+      },
+      {
+        "id": 10,
+        "source": 7,
+        "target": 16
+      },
+      {
+        "id": 11,
+        "source": 7,
+        "target": 9
+      },
+      {
+        "id": 12,
+        "source": 9,
+        "target": 8
+      },
+      {
+        "id": 13,
+        "source": 9,
+        "target": 10
+      },
+      {
+        "id": 14,
+        "source": 14,
+        "target": 11
+      },
+      {
+        "id": 15,
+        "source": 10,
+        "target": 4
+      },
+      {
+        "id": 16,
+        "source": 4,
+        "target": 14
+      },
+      {
+        "id": 17,
+        "source": 12,
+        "target": 13
+      },
+      {
+        "id": 18,
+        "source": 13,
+        "target": 2
+      },
+      {
+        "id": 19,
+        "source": 15,
+        "target": 7
+      },
+      {
+        "id": 20,
+        "source": 16,
+        "target": 8
+      }
+    ]
+  }
+}

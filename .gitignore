@@ -28,6 +28,5 @@ __pycache__/
 /src/renpy/traceback.txt
 /src/renpy/errors.txt
 
-# Source-derived scene inventories are local game data.
+# The Day 1 source inventory remains local game data.
 /src/renpy/game/episodes/episode_1_source.json
-/src/renpy/game/episodes/episode_2.json

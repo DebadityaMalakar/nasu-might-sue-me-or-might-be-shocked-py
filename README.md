@@ -43,7 +43,7 @@ Choose Day 1 or Day 2, then a scene and page. The tool reads Day 2 scene counts 
 
 The developer tool `python tools/prepare_saber_days.py "<patch directory>"` can prepare local text, voice-cue, and flowchart data for the Day 1 and Day 2 source files. This cache is ignored by Git and excluded from Ren'Py distributions. It is preparation data, not a playable route: flowchart conditions, choices, effects, and later scenes still require implementation.
 
-The Day 1 and Day 2 source cue inventories are generated locally using `tools/build_episode_manifest.py` and excluded from Git and distributions. Tests that inspect these optional inventories are skipped if they have not been generated.
+The Day 1 source cue inventory is generated locally using `tools/build_episode_manifest.py` and excluded from Git and distributions. The Day 2 cue inventory is tracked for reference but excluded from Ren'Py distributions. Neither inventory contains dialogue. Tests for optional local inventories are skipped if they have not been generated.
 
 ## License
 
